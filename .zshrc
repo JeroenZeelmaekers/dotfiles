@@ -19,7 +19,7 @@ alias ls="exa -hF --git --sort='extension'"
 alias vim="nvim"
 
 alias gaa = "git add ."
-alias gcm = "git commit -m"
+alias gc = "git commit"
 alias gp = "git push"
 alias gpu = "git pull"
 alias gck = "git checkout"
