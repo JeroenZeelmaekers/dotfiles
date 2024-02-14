@@ -19,6 +19,7 @@ alias ls="exa -hF --git --sort='extension'"
 alias vim="nvim"
 
 alias gs="git status"
+alias gd="git diff"
 alias ga="git add ."
 alias gc="git commit"
 alias gp="git push"
