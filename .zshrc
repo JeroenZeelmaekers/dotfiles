@@ -7,7 +7,7 @@ eval "$(nodenv init -)"
 export PATH="$HOME/.jenv/bin:$PATH"
 eval "$(jenv init -)"
 
-eval "$(zoxide init zsh)"
+eval "$(zoxide init --cmd cd zsh)"
 
 export ZSH="$HOME/.oh-my-zsh"
 
