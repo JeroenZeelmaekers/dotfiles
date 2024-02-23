@@ -13,7 +13,7 @@ return {
 		telescope.setup({
 			defaults = {
 				file_ignore_patterns = { "node_modules", "Pods", "android", "vendor", "target" },
-				path_display = { "truncate " },
+				path_display = { "truncate" },
 				mappings = {
 					i = {
 						["<C-k>"] = actions.move_selection_previous, -- move to prev result
@@ -29,5 +29,6 @@ return {
 		local keymap = vim.keymap
 
 		keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", { desc = "Fuzzy find files in cwd" })
+		keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 	end,
 }
