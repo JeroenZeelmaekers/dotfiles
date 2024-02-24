@@ -63,3 +63,4 @@ history = 100000
 [window]
 dynamic_title = false
 title = "Terminal"
+dynamic_padding = true
