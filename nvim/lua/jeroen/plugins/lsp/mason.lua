@@ -21,7 +21,6 @@ return {
 				"tailwindcss",
 				"lua_ls",
 				"emmet_ls",
-				"prismals",
 				"gopls",
 				"rust_analyzer",
 			},

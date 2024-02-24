@@ -57,11 +57,6 @@ return {
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
 
-		-- local signs = { Error = "", Warn = "", Hint = "󰠠", Info = "" }
-		-- for type, icon in pairs(signs) do
-		-- 	local hl = "DiagnosticSign" .. type
-		-- 	vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
-		-- end
 		lspconfig["marksman"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -87,11 +82,6 @@ return {
 			on_attach = on_attach,
 		})
 
-		lspconfig["prismals"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
 		lspconfig["gopls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
@@ -100,12 +90,6 @@ return {
 		lspconfig["rust_analyzer"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
-		})
-
-		lspconfig["graphql"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-			filetypes = { "graphql", "gql", "svelte", "typescriptreact", "javascriptreact" },
 		})
 
 		lspconfig["emmet_ls"].setup({
@@ -121,7 +105,6 @@ return {
 				"sass",
 				"scss",
 				"less",
-				"svelte",
 			},
 		})
 
