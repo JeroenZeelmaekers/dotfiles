@@ -12,6 +12,7 @@ plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 source $ZSH/oh-my-zsh.sh
 
 alias vim="nvim"
+
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add ."
@@ -19,6 +20,9 @@ alias gc="git commit"
 alias gp="git push"
 alias gpu="git pull"
 alias gck="git checkout"
+
+alias yabai-on="yabai --start-service && skhd --start-service" 
+alias yabai-off="yabai --stop-service && skhd --stop-service" 
 
 export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
