@@ -1,6 +1,4 @@
-import = [
-    "~/.config/alacritty/themes/themes/gruvbox-dark.toml"
-]
+import = ["~/.config/alacritty/themes/themes/gruvbox-dark.toml"]
 
 live_config_reload = true
 
@@ -36,4 +34,4 @@ history = 100000
 [window]
 dynamic_title = false
 title = "Terminal"
-dynamic_padding = true
+padding = { x = 6, y = 6 }
