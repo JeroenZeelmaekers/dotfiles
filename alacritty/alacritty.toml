@@ -12,11 +12,14 @@ TERM = "alacritty"
 size = 14
 
 [font.normal]
-family = "RobotoMono Nerd Font Mono"
-style = "Medium"
+family = "BerkeleyMono Nerd Font Mono"
+style = "Regular"
 [font.italic]
-family = "RobotoMono Nerd Font Mono"
-style = "Medium Italic"
+family = "BerkeleyMono Nerd Font Mono"
+style = "Italic"
+[font.bold]
+family = "BerkeleyMono Nerd Font Mono"
+style = "Bold"
 
 [[keyboard.bindings]]
 chars = "\u001BF"
