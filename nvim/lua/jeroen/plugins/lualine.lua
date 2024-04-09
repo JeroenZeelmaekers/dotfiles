@@ -6,10 +6,11 @@ return {
 		local lazy_status = require("lazy.status")
 		local lualine_gruvbox = require("lualine.themes.gruvbox")
 
-		lualine_gruvbox.normal.c.bg = "#141414"
-		lualine_gruvbox.visual.c.bg = "#141414"
-		lualine_gruvbox.insert.c.bg = "#141414"
-		lualine_gruvbox.inactive.c.bg = "#141414"
+		lualine_gruvbox.normal.c.bg = "transparent"
+		lualine_gruvbox.visual.c.bg = "transparent"
+		lualine_gruvbox.insert.c.bg = "transparent"
+		lualine_gruvbox.command.c.bg = "transparent"
+		lualine_gruvbox.inactive.c.bg = "transparent"
 
 		lualine.setup({
 			options = {
