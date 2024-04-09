@@ -9,6 +9,7 @@ return {
 		lualine_gruvbox.normal.c.bg = "#141414"
 		lualine_gruvbox.visual.c.bg = "#141414"
 		lualine_gruvbox.insert.c.bg = "#141414"
+		lualine_gruvbox.inactive.c.bg = "#141414"
 
 		lualine.setup({
 			options = {

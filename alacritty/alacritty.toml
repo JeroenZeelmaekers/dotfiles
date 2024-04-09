@@ -2,10 +2,6 @@ import = ["~/.config/alacritty/themes/themes/gruvbox-dark.toml"]
 
 live_config_reload = true
 
-#[cursor]
-#blinking = "On"
-
-
 [env]
 TERM = "alacritty"
 
@@ -22,22 +18,9 @@ style = "Italic"
 family = "BerkeleyMono Nerd Font Mono"
 style = "Bold"
 
-[[keyboard.bindings]]
-chars = "\u001BF"
-key = "Right"
-mods = "Alt"
-
-[[keyboard.bindings]]
-chars = "\u001BB"
-key = "Left"
-mods = "Alt"
-
 [scrolling]
 history = 100000
 
 [window]
-dynamic_title = false
-title = "Terminal"
 dynamic_padding = true
-padding = {x = 2, y = 2}
 decorations = "None"

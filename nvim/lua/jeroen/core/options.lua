@@ -10,7 +10,7 @@ opt.expandtab = true
 opt.autoindent = true
 opt.linebreak = true
 
-opt.colorcolumn = "80"
+-- opt.colorcolumn = "80"
 
 opt.wrap = false
 
