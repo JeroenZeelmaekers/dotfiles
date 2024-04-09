@@ -4,10 +4,15 @@ return {
 	config = function()
 		local lualine = require("lualine")
 		local lazy_status = require("lazy.status")
+		local lualine_gruvbox = require("lualine.themes.gruvbox")
+
+		lualine_gruvbox.normal.c.bg = "#141414"
+		lualine_gruvbox.visual.c.bg = "#141414"
+		lualine_gruvbox.insert.c.bg = "#141414"
 
 		lualine.setup({
 			options = {
-				theme = "gruvbox",
+				theme = lualine_gruvbox,
 			},
 			sections = {
 				lualine_x = {

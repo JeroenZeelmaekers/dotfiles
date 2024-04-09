@@ -5,6 +5,7 @@ live_config_reload = true
 #[cursor]
 #blinking = "On"
 
+
 [env]
 TERM = "alacritty"
 
@@ -38,3 +39,5 @@ history = 100000
 dynamic_title = false
 title = "Terminal"
 dynamic_padding = true
+padding = {x = 2, y = 2}
+decorations = "None"
