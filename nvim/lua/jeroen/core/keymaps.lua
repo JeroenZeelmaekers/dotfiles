@@ -3,6 +3,8 @@ vim.g.maplocalleader = " "
 
 local keymap = vim.keymap
 
+keymap.set("n", "<Esc>", "<cmd>nohlsearch<CR>", { desc = "Clear highlighted search" })
+
 keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split window vertically" })
 keymap.set("n", "<leader>sh", "<C-w>s", { desc = "Split window horizontally" })
 keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make splits equal size" })
