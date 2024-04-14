@@ -33,6 +33,7 @@ return {
 					"vim",
 					"dockerfile",
 					"gitignore",
+					"rust",
 				},
 				incremental_selection = {
 					enable = true,
