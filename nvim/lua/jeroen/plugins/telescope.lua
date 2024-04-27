@@ -12,7 +12,7 @@ return {
 
 		telescope.setup({
 			defaults = {
-				file_ignore_patterns = { "node_modules", "Pods", "android", "vendor", "target" },
+				file_ignore_patterns = { "node_modules", "Pods", "android/", "vendor", "target" },
 				path_display = { "truncate" },
 				mappings = {
 					i = {
