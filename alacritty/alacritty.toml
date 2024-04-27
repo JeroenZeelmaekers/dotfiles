@@ -23,4 +23,4 @@ history = 100000
 
 [window]
 dynamic_padding = true
-decorations = "None"
+
