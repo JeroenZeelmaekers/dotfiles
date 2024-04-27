@@ -34,6 +34,8 @@ return {
 					"dockerfile",
 					"gitignore",
 					"rust",
+					"go",
+					"gdscript",
 				},
 				incremental_selection = {
 					enable = true,
