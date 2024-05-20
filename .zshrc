@@ -42,3 +42,12 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="$HOME/.cargo/env:$PATH"
+
+# pnpm
+export PNPM_HOME="/Users/jeroen/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
