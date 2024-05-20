@@ -13,9 +13,16 @@ return {
 
 		mason_null_ls.setup({
 			ensure_installed = {
-				"prettier",
+				-- lua
 				"stylua",
+				-- web dev
+				"prettier",
 				"eslint_d",
+				-- markdown
+				"doctoc",
+				-- golang
+				"gofumpt",
+				"golangci-lint",
 			},
 		})
 		local formatting = null_ls.builtins.formatting
@@ -28,6 +35,8 @@ return {
 			sources = {
 				formatting.prettier,
 				formatting.stylua,
+				formatting.doctoc,
+				formatting.gofumpt,
 				diagnostics.eslint_d.with({
 					condition = function(utils)
 						return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs", ".eslintrc.json" })

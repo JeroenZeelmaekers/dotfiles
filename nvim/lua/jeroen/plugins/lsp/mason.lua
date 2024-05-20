@@ -15,13 +15,21 @@ return {
 
 		mason_lspconfig.setup({
 			ensure_installed = {
+				-- lua
+				"lua_ls",
+				-- javascript/typescript
 				"tsserver",
+				"emmet_ls",
+				-- html
 				"html",
+				-- css
 				"cssls",
 				"tailwindcss",
-				"lua_ls",
-				"emmet_ls",
+				-- markdown
+				"marksman",
+				-- golang
 				"gopls",
+				-- rust
 				"rust_analyzer",
 			},
 			automatic_installation = true,
@@ -29,9 +37,16 @@ return {
 
 		mason_tool_installer.setup({
 			ensure_installed = {
-				"prettier",
+				-- lua
 				"stylua",
+				-- web dev
+				"prettier",
 				"eslint_d",
+				-- markdown
+				"doctoc",
+				-- golang
+				"gofumpt",
+				"golangci-lint",
 			},
 		})
 	end,
