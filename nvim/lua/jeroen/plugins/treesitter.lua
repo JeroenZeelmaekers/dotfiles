@@ -32,6 +32,7 @@ return {
 					"lua",
 					"vim",
 					"dockerfile",
+					"gitcommit",
 					"gitignore",
 					"rust",
 					"go",
