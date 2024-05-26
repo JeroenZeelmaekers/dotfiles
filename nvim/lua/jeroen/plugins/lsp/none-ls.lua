@@ -23,6 +23,8 @@ return {
 				-- golang
 				"gofumpt",
 				"golangci-lint",
+				-- terraform
+				"tflint",
 			},
 		})
 		local formatting = null_ls.builtins.formatting
@@ -37,9 +39,15 @@ return {
 				formatting.stylua,
 				formatting.doctoc,
 				formatting.gofumpt,
+				diagnostics.tflint,
 				diagnostics.eslint_d.with({
 					condition = function(utils)
-						return utils.root_has_file({ ".eslintrc.js", ".eslintrc.cjs", ".eslintrc.json" })
+						return utils.root_has_file({
+							".eslintrc.js",
+							".eslintrc.cjs",
+							".eslintrc.json",
+							"eslint.config.js",
+						})
 					end,
 				}),
 			},

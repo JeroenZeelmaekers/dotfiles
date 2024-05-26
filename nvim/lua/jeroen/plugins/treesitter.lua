@@ -37,6 +37,8 @@ return {
 					"rust",
 					"go",
 					"gdscript",
+					"terraform",
+					"astro",
 				},
 				incremental_selection = {
 					enable = true,

@@ -25,12 +25,16 @@ return {
 				-- css
 				"cssls",
 				"tailwindcss",
+				--astro
+				"astro",
 				-- markdown
 				"marksman",
 				-- golang
 				"gopls",
 				-- rust
 				"rust_analyzer",
+				-- terraform
+				"terraformls",
 			},
 			automatic_installation = true,
 		})
@@ -47,6 +51,8 @@ return {
 				-- golang
 				"gofumpt",
 				"golangci-lint",
+				-- terraform
+				"tflint",
 			},
 		})
 	end,

@@ -116,6 +116,12 @@ return {
 			on_attach = on_attach,
 		})
 
+		-- astro
+		lspconfig["astro"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
 		-- markdown
 		lspconfig["marksman"].setup({
 			capabilities = capabilities,
@@ -130,6 +136,12 @@ return {
 
 		-- rust
 		lspconfig["rust_analyzer"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		-- terraform
+		lspconfig["terraformls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
