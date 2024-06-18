@@ -4,17 +4,11 @@ alt - k: yabai -m window --focus north
 alt - h: yabai -m window --focus west
 alt - l: yabai -m window --focus east
 
-# flip along y-axis
-shift + alt - y: yabai -m space --mirror y-axis
-
-# flip along x-axis
-shift + alt - x: yabai -m space --mirror x-axis
-
 # toggle window float
 shift + alt - t: yabai -m window --toggle float --grid 4:4:1:1:2:2
 
 # maximize a window
-shift + alt - m: yabai -m window --toggle zoom-fullscreen
+shift + alt - f: yabai -m window --toggle zoom-fullscreen
 
 # balance out tree of windows (resize to occupy same area)
 shift + alt - e: yabai -m space --balance
@@ -30,3 +24,6 @@ ctrl + alt - j: yabai -m window --warp south
 ctrl + alt - k: yabai -m window --warp north
 ctrl + alt - h: yabai -m window --warp west
 ctrl + alt - l: yabai -m window --warp east
+
+ctrl - p : yabai -m space --focus next
+ctrl - o : yabai -m space --focus prev
