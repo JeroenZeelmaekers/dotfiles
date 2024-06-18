@@ -15,6 +15,7 @@ outer.top =        8
 outer.right =      8
 
 [mode.main.binding]
+cmd-h = []
 alt-f = 'fullscreen'
 
 alt-h = 'focus left'
