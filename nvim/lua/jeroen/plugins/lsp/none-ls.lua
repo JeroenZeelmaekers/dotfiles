@@ -46,6 +46,7 @@ return {
 							".eslintrc.js",
 							".eslintrc.cjs",
 							".eslintrc.json",
+							"eslint.config.js",
 						})
 					end,
 				}),

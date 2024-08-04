@@ -1,6 +1,5 @@
 return {
 	"stevearc/conform.nvim",
-	-- version = "5.8.0",
 	lazy = true,
 	event = { "BufReadPre", "BufNewFile" },
 	config = function()
