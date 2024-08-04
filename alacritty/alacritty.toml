@@ -1,0 +1,27 @@
+import = ["~/.config/alacritty/themes/themes/gruvbox-dark.toml"]
+
+live_config_reload = true
+
+[env]
+TERM = "alacritty"
+
+[font]
+size = 14
+
+[font.normal]
+family = "BerkeleyMono Nerd Font Mono"
+style = "Regular"
+[font.italic]
+family = "BerkeleyMono Nerd Font Mono"
+style = "Italic"
+[font.bold]
+family = "BerkeleyMono Nerd Font Mono"
+style = "Bold"
+
+[scrolling]
+history = 100000
+
+[window]
+dynamic_padding = true
+dynamic_title = false
+decorations = "Buttonless"
