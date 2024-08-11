@@ -22,6 +22,7 @@ style = "Bold"
 history = 100000
 
 [window]
+title = "Terminal"
 dynamic_padding = true
 dynamic_title = false
-decorations = "Buttonless"
+# decorations = "Buttonless"
