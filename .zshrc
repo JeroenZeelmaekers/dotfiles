@@ -15,6 +15,8 @@ source <(fzf --zsh)
 
 alias vim="nvim"
 
+alias lg="lazygit"
+
 alias gs="git status"
 alias gd="git diff"
 alias ga="git add"
