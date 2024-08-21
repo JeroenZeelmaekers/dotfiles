@@ -1,6 +1,10 @@
 [colors]
 draw_bold_text_with_bright_colors = false
 
+[colors.primary]
+background = "0x141414"
+foreground = "0xd5c4a1"
+
 [colors.bright]
 black = "0x665c54"
 blue = "0xbdae93"
@@ -25,7 +29,4 @@ red = "0xfb4934"
 white = "0xd5c4a1"
 yellow = "0xfabd2f"
 
-[colors.primary]
-background = "0x141414"
-foreground = "0xd5c4a1"
 
