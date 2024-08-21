@@ -40,6 +40,7 @@ return {
 					"c",
 					"kotlin",
 					"swift",
+					"cpp",
 				},
 				incremental_selection = {
 					enable = true,

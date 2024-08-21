@@ -163,5 +163,11 @@ return {
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
+
+		-- cmake
+		lspconfig["cmake"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
 	end,
 }
