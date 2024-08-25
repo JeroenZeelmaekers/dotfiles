@@ -7,7 +7,7 @@
 #
 # Config
 #
-SPACE=0
+SPACE=4
 yabai -m config layout bsp
 yabai -m config top_padding $SPACE
 yabai -m config bottom_padding $SPACE
@@ -25,6 +25,7 @@ yabai -m config window_shadow off
 yabai -m rule --add app="^System Settings$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^AppCleaner$" manage=off
 yabai -m rule --add app="^Simulator$" manage=on
 
 #
@@ -55,7 +56,8 @@ setup_space 4 media
 
 yabai -m rule --add app="^Safari$" space=1
 yabai -m rule --add app="^Arc$" space=1
-open -a "Arc"
+# yabai -m rule --add app="^Firefox$" space=1
+open -a "Firefox"
 yabai -m rule --add app="^Alacritty$" space=2
 open -a "Alacritty"
 yabai -m rule --add app="^Discord$" space=3
