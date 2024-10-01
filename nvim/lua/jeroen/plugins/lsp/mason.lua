@@ -18,7 +18,7 @@ return {
 				-- lua
 				"lua_ls",
 				-- javascript/typescript
-				"tsserver",
+				"ts_ls",
 				"emmet_ls",
 				-- html
 				"html",
@@ -50,6 +50,7 @@ return {
 				-- web dev
 				"prettier",
 				"eslint_d",
+				"biome",
 				-- markdown
 				"doctoc",
 				-- golang
