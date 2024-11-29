@@ -20,6 +20,8 @@ return {
 				-- javascript/typescript
 				"ts_ls",
 				"emmet_ls",
+				--deno
+				"denols",
 				-- html
 				"html",
 				-- css
@@ -27,6 +29,8 @@ return {
 				"tailwindcss",
 				--astro
 				"astro",
+				--svelte
+				"svelte",
 				-- markdown
 				"marksman",
 				-- golang

@@ -35,7 +35,7 @@ return {
 			keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
 			opts.desc = "Smart rename"
-			keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+			keymap.set("n", "<leader>R", vim.lsp.buf.rename, opts)
 
 			opts.desc = "Show buffer diagnostics"
 			keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
@@ -81,6 +81,8 @@ return {
 		lspconfig["tsserver"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			root_dir = lspconfig.util.root_pattern("package.json", "package.jsonc"),
+			single_file_support = false,
 		})
 
 		lspconfig["emmet_ls"].setup({
@@ -97,6 +99,13 @@ return {
 				"scss",
 				"less",
 			},
+		})
+
+		-- deno
+		lspconfig["denols"].setup({
+			capabilities = capabilities,
+			root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
+			on_attach = on_attach,
 		})
 
 		-- html
@@ -118,6 +127,12 @@ return {
 
 		-- astro
 		lspconfig["astro"].setup({
+			capabilities = capabilities,
+			on_attach = on_attach,
+		})
+
+		-- svelte
+		lspconfig["svelte"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})

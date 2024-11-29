@@ -41,6 +41,7 @@ return {
 					"kotlin",
 					"swift",
 					"cpp",
+					"svelte",
 				},
 				incremental_selection = {
 					enable = true,
