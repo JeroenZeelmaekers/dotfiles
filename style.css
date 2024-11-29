@@ -1,13 +1,13 @@
 .ytd-watch-flexy#secondary {
-    display: none
+	display: none;
 }
 
 div.internalVimiumHintMarker.vimiumReset {
-    background-color: #98971a !important;
-    color: #fbf1c7 !important;
-    box-shadow: inset 0 -2px 0 #98971a !important;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
+	background-color: #f5bde6 !important;
+	color: #242739 !important;
+	box-shadow: none !important;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
 
 	opacity: 1;
 	animation-name: fadeInOpacity;
@@ -17,13 +17,13 @@ div.internalVimiumHintMarker.vimiumReset {
 }
 
 div.internalVimiumHintMarker.vimiumReset span {
-    color: #fbf1c7 !important;
-    font-family: Helvetica, Arial, sans-serif;
-    font-weight: bold;
+	color: #242739 !important;
+	font-family: Helvetica, Arial, sans-serif;
+	font-weight: bold;
 }
 
 div.internalVimiumHintMarker.vimiumReset > .matchingCharacter {
-    color: #d5c4a1 !important;
+	color: #f5bde6 !important;
 }
 
 @keyframes fadeInOpacity {
