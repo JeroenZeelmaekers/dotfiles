@@ -1,13 +1,13 @@
 #!/usr/bin/env bash
 
 # load scripting additions
-# sudo yabai --load-sa
-# yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+sudo yabai --load-sa
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 
 #
 # Config
 #
-SPACE=4
+SPACE=8
 yabai -m config layout bsp
 yabai -m config top_padding $SPACE
 yabai -m config bottom_padding $SPACE
@@ -31,10 +31,6 @@ yabai -m rule --add app="^Simulator$" manage=on
 #
 # Setup spaces
 #
-# for idx in $(yabai -m query --spaces | jq '.[].index | select(. > 6)' | sort -nr); do
-#   yabai -m space --destroy "$idx"
-# done
-
 function setup_space {
   local idx="$1"
   local name="$2"
@@ -54,13 +50,11 @@ setup_space 2 code
 setup_space 3 communication 
 setup_space 4 media
 
-yabai -m rule --add app="^Safari$" space=1
 yabai -m rule --add app="^Arc$" space=1
-# yabai -m rule --add app="^Firefox$" space=1
-open -a "Firefox"
+open -a "Arc"
 yabai -m rule --add app="^Alacritty$" space=2
 open -a "Alacritty"
 yabai -m rule --add app="^Discord$" space=3
-yabai -m rule --add app="^Spotify$" space=3
+yabai -m rule --add app="^Spotify$" space=4
 
 yabai -m rule --apply
