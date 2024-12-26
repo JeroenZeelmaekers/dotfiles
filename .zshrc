@@ -21,7 +21,6 @@ alias gp="git push"
 alias gpu="git pull"
 alias gck="git checkout"
 
-# export ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#666666"
 export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 export ANDROID_HOME=$HOME/Library/Android/sdk

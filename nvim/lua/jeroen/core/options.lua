@@ -10,17 +10,16 @@ opt.expandtab = true
 opt.autoindent = true
 opt.linebreak = true
 
--- opt.colorcolumn = "80"
+opt.colorcolumn = "80"
 
 opt.wrap = false
 
 opt.ignorecase = true
 opt.smartcase = true
 
-opt.cursorline = false
-
 opt.termguicolors = true
-opt.background = "dark"
+opt.cursorline = true
+
 opt.signcolumn = "yes"
 
 opt.backspace = "indent,eol,start"

@@ -27,34 +27,3 @@ yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^Calculator$" manage=off
 yabai -m rule --add app="^AppCleaner$" manage=off
 yabai -m rule --add app="^Simulator$" manage=on
-
-#
-# Setup spaces
-#
-function setup_space {
-  local idx="$1"
-  local name="$2"
-  local space=
-  echo "setup space $idx : $name"
-
-  space=$(yabai -m query --spaces --space "$idx")
-  if [ -z "$space" ]; then
-    yabai -m space --create
-  fi
-
-  yabai -m space "$idx" --label "$name"
-}
-
-setup_space 1 web 
-setup_space 2 code
-setup_space 3 communication 
-setup_space 4 media
-
-yabai -m rule --add app="^Arc$" space=1
-open -a "Arc"
-yabai -m rule --add app="^Alacritty$" space=2
-open -a "Alacritty"
-yabai -m rule --add app="^Discord$" space=3
-yabai -m rule --add app="^Spotify$" space=4
-
-yabai -m rule --apply

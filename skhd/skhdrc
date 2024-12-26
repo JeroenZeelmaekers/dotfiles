@@ -6,6 +6,14 @@ alt - k: yabai -m window --focus north
 alt - h: yabai -m window --focus west
 alt - l: yabai -m window --focus east
 
+# focus display
+ctrl + alt - o: yabai -m display --focus next
+ctrl + alt - i: yabai -m display --focus prev
+
+# move window to display 
+ctrl + shift + alt - j: yabai -m display --focus prev
+ctrl + shift + alt - k: yabai -m display --focus next
+
 # toggle window float
 shift + alt - t: yabai -m window --toggle float --grid 4:4:1:1:2:2
 
