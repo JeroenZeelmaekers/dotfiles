@@ -1,3 +1,7 @@
 theme = dark:xcodedark,light:xcodelight
+
 font-family = "BerkeleyMono Nerd Font Mono Bold"
 font-feature = true
+font-size = 14
+
+shell-integration = none
