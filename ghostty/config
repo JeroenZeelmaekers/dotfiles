@@ -1,7 +1,14 @@
+window-padding-x = 0
+window-padding-y = 0
+window-padding-color = background
+window-padding-balance = true
+
 theme = dark:xcodedark,light:xcodelight
 
-font-family = "BerkeleyMono Nerd Font Mono Bold"
+font-family = "JetBrainsMono NFM Medium"
 font-feature = true
-font-size = 14
+font-size = 13
 
-shell-integration = none
+shell-integration = zsh
+cursor-style = bar
+shell-integration-features = cursor, no-sudo, title
