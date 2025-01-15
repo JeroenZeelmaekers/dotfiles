@@ -1,3 +1,5 @@
+vim.cmd("let g:netrw_liststyle = 3")
+
 local opt = vim.opt
 
 opt.number = true
@@ -9,8 +11,6 @@ opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
 opt.linebreak = true
-
-opt.colorcolumn = "80"
 
 opt.wrap = false
 
@@ -30,3 +30,11 @@ opt.splitright = true
 opt.splitbelow = true
 
 opt.swapfile = false
+
+opt.updatetime = 50
+
+opt.hlsearch = false
+opt.incsearch = true
+
+opt.scrolloff = 8
+opt.fillchars = { eob = " " }

@@ -20,29 +20,11 @@ return {
 				-- javascript/typescript
 				"ts_ls",
 				"emmet_ls",
-				--deno
-				"denols",
 				-- html
 				"html",
 				-- css
 				"cssls",
 				"tailwindcss",
-				--astro
-				"astro",
-				--svelte
-				"svelte",
-				-- markdown
-				"marksman",
-				-- golang
-				"gopls",
-				-- rust
-				"rust_analyzer",
-				-- terraform
-				"terraformls",
-				-- zig
-				"zls",
-				-- C/C++
-				"clangd",
 			},
 			automatic_installation = true,
 		})
@@ -55,13 +37,6 @@ return {
 				"prettier",
 				"eslint_d",
 				"biome",
-				-- markdown
-				"doctoc",
-				-- golang
-				"gofumpt",
-				"golangci-lint",
-				-- terraform
-				"tflint",
 			},
 		})
 	end,

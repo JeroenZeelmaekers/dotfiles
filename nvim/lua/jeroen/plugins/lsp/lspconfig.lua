@@ -54,6 +54,12 @@ return {
 
 			opts.desc = "Restart LSP"
 			keymap.set("n", "<leader>rs", ":LspRestart<CR>", opts)
+
+			local signs = { Error = " ", Warn = " ", Hint = "󰠠 ", Info = " " }
+			for type, icon in pairs(signs) do
+				local hl = "DiagnosticSign" .. type
+				vim.fn.sign_define(hl, { text = icon, texthl = hl, numhl = "" })
+			end
 		end
 
 		local capabilities = cmp_nvim_lsp.default_capabilities()
@@ -101,13 +107,6 @@ return {
 			},
 		})
 
-		-- deno
-		lspconfig["denols"].setup({
-			capabilities = capabilities,
-			root_dir = lspconfig.util.root_pattern("deno.json", "deno.jsonc"),
-			on_attach = on_attach,
-		})
-
 		-- html
 		lspconfig["html"].setup({
 			capabilities = capabilities,
@@ -121,66 +120,6 @@ return {
 		})
 
 		lspconfig["tailwindcss"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- astro
-		lspconfig["astro"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- svelte
-		lspconfig["svelte"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- markdown
-		lspconfig["marksman"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- golang
-		lspconfig["gopls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- rust
-		lspconfig["rust_analyzer"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- terraform
-		lspconfig["terraformls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- zig
-		lspconfig["zls"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- c/c++
-		lspconfig["clangd"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- kotlin
-		lspconfig["kotlin_language_server"].setup({
-			capabilities = capabilities,
-			on_attach = on_attach,
-		})
-
-		-- cmake
-		lspconfig["cmake"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
 		})
